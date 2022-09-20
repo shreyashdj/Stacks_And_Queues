@@ -60,6 +60,17 @@ public class Main {
 		
 		queueOperations.display();		//	printing Linked List using display method
 
+		System.out.println("\n **** Removing Elements ****");
+		
+		/*
+		 * 	used dequeue and display method in while loop to
+		 *  remove data and print Linked List till it gets empty
+		 */
+		
+		while ( !queueOperations.isEmpty() ) {
+			queueOperations.dequeue();
+			queueOperations.display();
+		}
 	}
 
 }

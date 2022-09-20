@@ -50,6 +50,27 @@ public class QueueOperations {
 		
 	}
 	
+	/**
+	 * method to remove elements in Queue
+	 */
+	public void dequeue() {
+		
+		if (isEmpty()) {
+			
+			System.out.println("\n Linked List is empty");
+			
+		} else {
+		
+			int removed = front.data;		// storing removed data
+			front = front.next;
+			System.out.println("\n Removed data : " + removed);
+		}
+		
+		if (front == null) {
+			rear = null;
+		}
+	}
+	
 	/*
 	 *	method to check Linked List is empty or not
 	 */
