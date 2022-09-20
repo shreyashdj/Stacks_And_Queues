@@ -40,6 +40,26 @@ public class Main {
 			stackOperation.display();
 		}
 
+		/*
+		 * 	Queue Methods
+		 */
+		
+		System.out.println("\n **** Queue Methods ****");
+		
+		QueueOperations queueOperations = new QueueOperations();	// created object of QueueOperations class
+		
+		System.out.println("\n **** Adding Elements ****");
+		System.out.println("\n **** Adding 56 then 30 then 70 ****");
+
+		/*
+		 * 	adding data 70 then 30 then 56 using enqueue method
+		 */
+		queueOperations.enqueue(56);
+		queueOperations.enqueue(30);
+		queueOperations.enqueue(70);
+		
+		queueOperations.display();		//	printing Linked List using display method
+
 	}
 
 }
